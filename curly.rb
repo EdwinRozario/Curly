@@ -49,9 +49,7 @@ end
 curly = Curly.new('http://localhost:3000', :json, api_key: 'RYAVDhaqNsCyyYtssLFE')
 
 # TEST CALLS
-# curly.get('records')
 curly.get('stories')
-# {"name"=>"New Story", "description"=>"", "privacy"=>"public", "featured"=>false, "approved"=>false, "tags"=>[], "id"=>"57fd697769ae851c55000000", "number_of_items"=>0, "contents"=>[]}
 curly.get('stories/57fd697769ae851c55000000')
 curly.get('stories/57fd697769ae851c55000000/story_items')
 curly.get('stories/57fd697769ae851c55000000/story_items/57fd885169ae851eed000000')
@@ -78,8 +76,6 @@ curly.patch('stories/57fd697769ae851c55000000/story_items/57fd885169ae851eed0000
                           content: { value: 'Updated Text Again' },
                           meta: {} }
   })
-
-# curly.get('stories/57fd697769ae851c55000000/story_items/57fd885169ae851eed000000')
 
 
 
