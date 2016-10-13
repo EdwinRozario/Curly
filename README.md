@@ -25,5 +25,7 @@ curly.post('posts', { name: 'Foo', description: 'Bar', tag: 'Quxx' })
 # This will make a POST call to 'http://localhost:3000/posts.json?api_key=RYAVDhaqNsCyyYtssLFE&name=Foo,description=Bar&tag=Quxx'
 ```
 
+Note: More work to be done in future
+
 
 
