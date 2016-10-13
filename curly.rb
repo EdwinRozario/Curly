@@ -57,12 +57,12 @@ end
 
 # curly = Curly.new('http://localhost:3000', :json, api_key: 'RYAVDhaqNsCyyYtssLFE')
 
-curly = Curly.new('http://api.dnz0a.digitalnz.org', :json, api_key: '387d16c7596c9cfff190d14a81ec189a')
-
 # curly.post('stories/57fe9883297b1f1f63000630/story_items',
 #            { block: { type: 'text', sub_type: 'heading',
 #                           content: { value: 'Value text here' },
 #                           meta: {} } })
+
+# curly.get('records', { text: 'Cat' })
 
 curly.get('records', { and: { category: 'Images' } })
 
