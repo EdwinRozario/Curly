@@ -7,8 +7,9 @@ Curly is a class that enables to make curl requests for GET and POST methods.
 ```
 curly = Curly.new('http://localhost:3000', true, :json, api_key: 'anApiKeey')
 # initialise the object with the domain name, format and any parameter thats used with
-# second param is to enable pretty print response. By defult this vale is false 
-# all the url calls
+# all the url calls.
+# Second param is to enable pretty print the response. By defult this vale is false 
+
 
 curly.get('posts')
 # This will make a GET call to 'http://localhost:3000/posts.json?api_key=anApiKeey'
