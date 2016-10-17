@@ -76,7 +76,4 @@ class Curly
   end
 end
 
-curly = Curly.new('http://api.dnz0a.digitalnz.org', :json, true, api_key: '387d16c7596c9cfff190d14a81ec189a')
-curly.get('records/32058904')
-
 
